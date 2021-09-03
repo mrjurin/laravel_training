@@ -51,7 +51,7 @@ class CourseController extends Controller
 
    public function delete(Request $request,$id)
    {
-        dd($request->all());
-        //task yang perlu dibuat sebagai latihan
+        Course::find($id)->delete();
+        return redirect('/course/list');
    }
 }
