@@ -37,5 +37,20 @@ Route::get('/course/list','App\Http\Controllers\CourseController@list');
 
 Route::get('/course/edit/{id}','App\Http\Controllers\CourseController@edit');
 Route::post('/course/update','App\Http\Controllers\CourseController@update');
-
 Route::post('/course/delete/{id}','App\Http\Controllers\CourseController@delete');
+
+Route::get('/lecturer','App\Http\Controllers\LecturerController@index');
+
+
+
+Route::get('/login','App\Http\Controllers\LoginController@index');
+Route::post('/login/authenticate','App\Http\Controllers\LoginController@authenticate');
+
+Route::get('/user/create','App\Http\Controllers\UserController@create');
+Route::post('/user/store','App\Http\Controllers\UserController@store');
+Route::get('/user/home','App\Http\Controllers\UserController@home');
+
+
+
+
+
